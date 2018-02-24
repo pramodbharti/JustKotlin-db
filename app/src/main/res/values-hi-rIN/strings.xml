@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">सिर्फ Kotlin</string>
+    <string name="name">नाम</string>
+    <string name="toppings">उपरी परत</string>
+    <string name="whipped_cream">फेटी हुई मलाई</string>
+    <string name="chocolate">चॉकलेट</string>
+    <string name="quantity">मात्रा</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="order">आदेश करें</string>
+    <string name="order_summary_head">आदेश सारांश</string>
+    <string name="yes">हाँ</string>
+    <string name="no">नहीं</string>
+    <string name="total">कुल</string>
+    <string name="thank_you">धन्यवाद!</string>
+    <string name="reset">रद्द करें</string>
+    <string name="confirm">आदेश भेजें</string>
+    <string name="counter">1</string>
+    <string name="added_whipped">फेटी हुई मलाई जोड़ा गया ?</string>
+    <string name="added_chocolate">चॉकलेट जोड़ा गया?</string>
+    <string name="no_more_than_99">आप 99 से ज्यादा कॉफी आदेश नहीं कर सकते</string>
+    <string name="no_less_than_1">आप 1 से कम कॉफी आदेश नहीं कर सकते</string>
+    <string name="no_name">कृपया अपना नाम दर्ज करें (न्यूनतम 3 वर्ण)</string>
+    <string name="order_from">आदेश</string>
+    <string name="no_order">कोई आदेश सारांश नहीं है</string>
+</resources>

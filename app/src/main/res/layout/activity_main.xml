@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.pramod.justkotlin.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <EditText
+            android:id="@+id/name"
+            android:hint="@string/name"
+            style="@style/height_width" />
+
+
+        <TextView
+            style="@style/height_width"
+            android:gravity="center_horizontal"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="@string/toppings"
+            android:textAllCaps="true" />
+
+        <CheckBox
+            android:id="@+id/whipped_cream"
+            style="@style/height_width"
+            android:paddingLeft="16dp"
+            android:text="@string/whipped_cream" />
+
+        <CheckBox
+            android:id="@+id/chocolate"
+            android:paddingLeft="16dp"
+            android:text="@string/chocolate"
+            style="@style/height_width" />
+
+        <TextView
+
+            android:gravity="center_horizontal"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="@string/quantity"
+            android:textAllCaps="true"
+            style="@style/height_width" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <Button
+                android:layout_width="56dp"
+                android:text="@string/minus"
+                style="@style/button"
+                android:onClick="decrement" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="@string/counter"
+                android:id="@+id/order_quantity"
+                android:textSize="22sp" />
+
+            <Button
+                android:layout_width="56dp"
+                android:onClick="increment"
+                android:text="@string/plus"
+                style="@style/button" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/order_button"
+            android:layout_width="wrap_content"
+            style="@style/button"
+            android:layout_gravity="end"
+            android:onClick="submitOrder"
+            android:text="@string/order" />
+
+        <TextView
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="@string/order_summary_head"
+            android:textAllCaps="true"
+            style="@style/height_width" />
+
+        <TextView
+            android:id="@+id/order_summary_view"
+            android:padding="16dp"
+            android:text=""
+            style="@style/height_width" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/reset"
+                style="@style/button"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/reset"
+                android:onClick="reset" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/confirm"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/confirm"
+                android:onClick="confirm"
+                style="@style/button" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
